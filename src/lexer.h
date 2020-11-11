@@ -22,7 +22,6 @@ token* generate_tokens(){
   }
   token temp;
   temp.name = "EOF";
-  temp.value = "NULL";
   a[i] = temp;
   return a;
 }

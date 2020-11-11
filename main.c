@@ -7,9 +7,7 @@ int main(void) {
   while(1){
     printf(">>> ");
     token* tokens = generate_tokens();
-    for(int i = 0; strcmp(tokens[i].name, "EOF"); i++){
-      printf("%s:%s\n", tokens[i].name, tokens[i].value);
-    }
+    free(tokens);
   }
   return 0;
 }
