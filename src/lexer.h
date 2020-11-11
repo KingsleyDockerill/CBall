@@ -6,10 +6,7 @@ typedef struct {
 
 token* generate_tokens(){
   token a[1000];
-  for(int i = 0; a[i].value != NULL; i++){
-    token temp;
-    a[i] = temp;
-  }
+  token temptok;
   int c;
   int i; // The current a element
   while((c = getchar()) != '\n'){
